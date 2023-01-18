@@ -11,14 +11,12 @@ services:
       - key: PORT
         value: 5244
       - key: DB_TYPE
-        # value: sqlite3
-        sync: false
+        value: postgres
       - key: DB_HOST
         # value: db_host
         sync: false
       - key: DB_PORT
-        # value: 3306
-        sync: false
+        value: 5432
       - key: DB_USER
         # value: db_user
         sync: false
@@ -32,5 +30,4 @@ services:
         # value: alist_
         sync: false
       - key: CDN
-        value: https://npm.elemecdn.com/alist-web@$version/dist
-        sync: false
+        value: https://npm.elemecdn.com/alist-web@$version/dist/
